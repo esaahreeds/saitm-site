@@ -36,19 +36,18 @@ body {
   justify-content: space-between;
 }
 
-.card .imgbx{
+.card .img{
   position: relative;
   width: 100%;
   height: 650px;
-
   border-radius: 15px;
-  background: url(img/toji.jpg);
+  background: url(img/saitm.jpeg);
   background-size: cover;
 
 }
 
 
-.card .content {
+.card .c2 {
   position: relative;
   width: 100%;
   height: 200px;
@@ -58,13 +57,11 @@ body {
 }
 
 
-.card .content .price{
+.card .c2 .c3{
   position: absolute;
   top: -310px;
   height: 300px;
   width: 50%;
-
- 
   border-top-right-radius: 25px;
 }
 
