@@ -5,59 +5,51 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color: salmon;
+  background-color:#A41F13;
 }
 
 html,
 body {
-   
   height: 100%;
   width: 100%;
-  
 }
 
-
-.page-1{
+.page-1-card {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-.card{
-
+.card {
   margin-top: 80px;
   position: relative;
   width: 1450px;
   height: 900px;
- 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.card .img{
+.card .img {
   position: relative;
   width: 100%;
   height: 650px;
   border-radius: 15px;
   background: url(img/saitm.jpeg);
   background-size: cover;
-
 }
-
 
 .card .c2 {
   position: relative;
   width: 100%;
   height: 200px;
-  
+
   border-radius: 15px;
   border-top-left-radius: 0;
 }
 
-
-.card .c2 .c3{
+.card .c2 .c3 {
   position: absolute;
   top: -310px;
   height: 300px;
@@ -65,4 +57,33 @@ body {
   border-top-right-radius: 25px;
 }
 
+.page-1 > h2 {
+  color: white;
+  background-color: transparent;
+  padding-top: -50px;
+  font-size: 200px;
+  font-weight: 800;
+  position: absolute;
+  top: 430px;
+  left: 55px;
+}
 
+.page-1 > h3 {
+  color: white;
+  padding-top: -50px;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: 630px;
+  left: 55px;
+}
+
+.line {
+  background-color: black;
+  height: 2px;
+  width: 1450px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+}
