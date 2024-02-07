@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  background-color: salmon;
 }
 
 html,
@@ -12,17 +13,59 @@ body {
    
   height: 100%;
   width: 100%;
+  
 }
 
 
+.page-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-.poly{
-   height: 900px;
-   width: 1500px;
+.card{
 
-    background-color: red;
+  margin-top: 80px;
+  position: relative;
+  width: 1450px;
+  height: 900px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    clip-path: polygon(88% 85%, 43% 84%, 43% 70%, 12% 67%, 11% 9%, 45% 9%, 45% 22%, 88% 22%);
+.card .imgbx{
+  position: relative;
+  width: 100%;
+  height: 650px;
 
+  border-radius: 15px;
+  background: url(img/toji.jpg);
+  background-size: cover;
 
 }
+
+
+.card .content {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  
+  border-radius: 15px;
+  border-top-left-radius: 0;
+}
+
+
+.card .content .price{
+  position: absolute;
+  top: -310px;
+  height: 300px;
+  width: 50%;
+
+ 
+  border-top-right-radius: 25px;
+}
+
+
