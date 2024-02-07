@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+   
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.poly{
+   height: 900px;
+   width: 1500px;
+
+    background-color: red;
+
+    clip-path: polygon(88% 85%, 43% 84%, 43% 70%, 12% 67%, 11% 9%, 45% 9%, 45% 22%, 88% 22%);
+
+
+}
