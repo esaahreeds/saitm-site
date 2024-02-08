@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color:#A41F13;
+  background-color: purple;
 }
 html,
 body {
@@ -13,33 +13,39 @@ body {
   width: 100%;
 }
 
-.navbar{
+.page-1 {
+  background-color: salmon;
+}
+
+.navbar {
   margin-top: 8px;
   padding: 1vw;
+  height: 50px;
   width: 95%;
-  background-color: rgb(27, 47, 118);
-  position:fixed;
+  background-color: salmon;
+  position: fixed;
   left: 50%;
-  transform: translate( -50%);
-  border-radius: 25px;
+  transform: translate(-50%);
+  border-radius: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 999;
-  
+  z-index: 1;
 }
-.nav1{
+.nav1 {
+  background-color: salmon;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.3vw;
   cursor: pointer;
 }
-.nav1 a{
+
+
+.nav1 a {
+  background-color: salmon;
   text-decoration: none;
   padding: 8px 15px;
-  border: 0.5px solid rgba(96, 94, 94, 0.858);
-  border-radius: 50px;
   font-weight: 500;
   color: black;
   transition: all ease 0.4s;
@@ -48,7 +54,8 @@ body {
   z-index: 1;
   overflow: hidden;
 }
-.nav1 a::after{
+.nav1 a::after {
+  background-color: salmon;
   content: "";
   position: absolute;
   width: 100%;
@@ -60,40 +67,45 @@ body {
   z-index: -1;
   transition: all ease 0.3s;
 }
-.nav1 a:hover::after{
+.nav1 a:hover::after {
   bottom: 0;
-  border-radius: 0;
-
+  border-radius: 0px;
 }
-.nav1 a:hover{
+.nav1 a:hover {
   color: white;
 }
 
-.navbar button{
+.navbar > img {
+
+  background-color: salmon;
+  height: auto;
+ 
+  margin-left: -8px;
+  border-radius: 10px;
+  
+}
+.navbar button  {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  margin-right: -9px;
+  text-decoration: none;
   padding: 5px 10px;
   border: none;
   border-radius: 50px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   background-color: black;
   cursor: pointer;
 }
-.navbar button:hover{
+.navbar button:hover {
   background-color: blueviolet;
   transition: all ease 0.6s;
 }
 
-
-
-
-
-
-
-
-
-
 .page-1-card {
+  background-color: salmon;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +113,7 @@ body {
 }
 
 .card {
+  background-color: salmon;
   margin-top: 80px;
   position: relative;
   width: 1450px;
@@ -110,16 +123,31 @@ body {
   justify-content: space-between;
 }
 
-.card .img {
+.img-carousel {
+  background-color: salmon;
   position: relative;
   width: 100%;
   height: 650px;
   border-radius: 15px;
-  background: url(img/saitm.jpeg);
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+}
+
+.carousel-item.active {
+  opacity: 1;
 }
 
 .card .c2 {
+  background-color: salmon;
   position: relative;
   width: 100%;
   height: 200px;
@@ -129,6 +157,7 @@ body {
 }
 
 .card .c2 .c3 {
+  background-color: salmon;
   position: absolute;
   top: -310px;
   height: 300px;
@@ -137,6 +166,7 @@ body {
 }
 
 .page-1 > h2 {
+  background-color: salmon;
   color: white;
   background-color: transparent;
   padding-top: -50px;
@@ -148,6 +178,7 @@ body {
 }
 
 .page-1 > h3 {
+  background-color: salmon;
   color: white;
   padding-top: -50px;
   font-size: 20px;
@@ -167,3 +198,96 @@ body {
   transform: translate(-50%, -110%);
 }
 
+
+.page-2{
+  width: 100%;
+  background-color: salmon;
+}
+
+
+.about {
+  background-color:olive ;
+  height: 1100px;
+  width: 96%;
+  margin-left: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abt-p1 {
+ background-color: salmon;
+  width: 30%;
+  height: 400px;
+
+  border-right: 2px solid black;
+}
+
+.abt-p1 h3{
+  background-color: salmon;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+
+
+
+.abt-p1 img {
+  background-color: salmon;
+  margin-top: 69px;
+
+  width: 90%;
+
+  mix-blend-mode: soft-light;
+  transform: rotate(10deg);
+}
+
+.abt-p2 {
+  background-color: salmon;
+ display: flex;
+  
+  width: 70%;
+  height: 400px;
+}
+
+.abt-p2 h3 {
+  background-color: salmon;
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.dot
+{position: absolute;
+  background-color: rgb(241, 62, 137);
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  left: 95.3%;
+}
+
+
+
+.rm-btn{
+  position: relative;
+  display: flex;
+  align-items: center;
+   width: 385px;
+   height: 30px;
+   margin-top: 30%;
+   margin-right: 2.3% ;
+   padding: 5px 10px;
+   border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.page-3{
+  background-color: white;
+  width: 100%;
+  height: 700px;
+}
