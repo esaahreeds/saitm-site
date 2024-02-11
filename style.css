@@ -205,8 +205,9 @@ body {
   z-index: 10000;
 }
 .shape {
-  background: #a92a30;
+  background: none;
   position: absolute;
+  left: 67%;
   width: 30vw;
   height: 60vh;
   right: 0;
@@ -226,7 +227,7 @@ body {
 #shape2 {
   height: 30vh;
   width: 30vw;
-  background: linear-gradient(rgb(177, 5, 5), rgba(255, 119, 0, 0.788));
+  background: orangered;
   border-radius: 50%;
   filter: blur(30px);
   position: absolute;
@@ -239,16 +240,34 @@ body {
 #shape3 {
   height: 30vh;
   width: 30vw;
-  background: linear-gradient(#c71e1e, rgb(255, 119, 0));
+  background: orangered;
   border-radius: 60%;
   filter: blur(30px);
   position: absolute;
   animation-name: first;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+#shape4 {
+  height: 30vh;
+  width: 30vw;
+  background: orangered;
+  border-radius: 60%;
+  filter: blur(30px);
+  position: absolute;
+  animation-name: third;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+
+
 @keyframes first {
   from {
     transform: translate(-30%, -30%);
@@ -263,6 +282,15 @@ body {
   }
   to {
     transform: translate(0%, -90px);
+  }
+}
+
+@keyframes third {
+  from {
+    transform: translate(-10%, 0);
+  }
+  to {
+    transform: translate(2%, 0);
   }
 }
 
