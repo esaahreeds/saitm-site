@@ -216,18 +216,19 @@ body {
 #shape1 {
   height: 100%;
   width: 100%;
-  background: linear-gradient(#c71e1e, rgb(237, 61, 12));
+  background: linear-gradient(#c71e1e, rgb(140, 42, 15));
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  filter: blur(60px);
+  filter: blur(30px);
   position: absolute;
+
 }
 #shape2 {
   height: 30vh;
   width: 30vw;
-  background: linear-gradient(rgb(113, 37, 9), rgba(255, 119, 0, 0.788));
+  background: linear-gradient(rgb(177, 5, 5), rgba(255, 119, 0, 0.788));
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(30px);
   position: absolute;
   animation-name: second;
   animation-duration: 3s;
@@ -239,8 +240,8 @@ body {
   height: 30vh;
   width: 30vw;
   background: linear-gradient(#c71e1e, rgb(255, 119, 0));
-  border-radius: 50%;
-  filter: blur(50px);
+  border-radius: 60%;
+  filter: blur(30px);
   position: absolute;
   animation-name: first;
   animation-duration: 3s;
@@ -250,18 +251,18 @@ body {
 }
 @keyframes first {
   from {
-    transform: translate(-50%, -40%);
+    transform: translate(-30%, -30%);
   }
   to {
-    transform: translate(0%, 50%);
+    transform: translate(0%, 30%);
   }
 }
 @keyframes second {
   from {
-    transform: translate(-50%, 40%);
+    transform: translate(-30%, 40%);
   }
   to {
-    transform: translate(0%, -120px);
+    transform: translate(0%, -90px);
   }
 }
 
