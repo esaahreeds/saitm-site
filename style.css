@@ -7,14 +7,12 @@
   font-family: "Montserrat", sans-serif;
 
   background-color: purple;
-
 }
 html,
 body {
   height: 100%;
   width: 100%;
 }
-
 
 .page-1 {
   background-color: salmon;
@@ -45,7 +43,6 @@ body {
   cursor: pointer;
 }
 
-
 .nav1 a {
   background-color: #d2c8b8;
   text-decoration: none;
@@ -59,8 +56,7 @@ body {
   overflow: hidden;
 }
 .nav1 a::after {
-  background-color: #a92a30
-;
+  background-color: #a92a30;
   content: "";
   position: absolute;
   width: 100%;
@@ -80,19 +76,15 @@ body {
   color: white;
 }
 
-
-
-
 .navbar > img {
   background-color: #d2c8b8;
   height: 30px;
   width: 13%;
- 
+
   margin-left: -5px;
   border-radius: 10px;
-  
 }
-.navbar button  {
+.navbar button {
   position: fixed;
   top: 10px;
   right: 20px;
@@ -109,18 +101,14 @@ body {
   cursor: pointer;
 }
 
-.navbar button:hover{
+.navbar button:hover {
   background-color: whitesmoke;
   color: black;
   transition: all ease-out 0.5s;
 }
 
-
-
-
 .page-1-card {
-  background-color: #a92a30
-;
+  background-color: #a92a30;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,10 +118,8 @@ body {
 .card {
   z-index: 1;
 
-  background-color: black
-
-;
-border-radius: 15px;
+  background-color: black;
+  border-radius: 15px;
   margin-top: 80px;
   border: none;
   position: relative;
@@ -141,25 +127,21 @@ border-radius: 15px;
   height: 600px;
   display: flex;
   flex-direction: column;
- 
 }
 
 .img-carousel {
-  background-color: #a92a30
-;
+  background-color: #a92a30;
   position: relative;
   width: 100%;
   height: 650px;
   border-radius: 15px;
   overflow: hidden;
-  
 }
 
 .carousel-item {
   width: 100%;
   height: 100%;
   background-size: cover;
-
 
   background-position: center;
   transition: opacity 0.5s ease-in-out;
@@ -169,29 +151,20 @@ border-radius: 15px;
 
 .carousel-item.active {
   opacity: 1;
-
 }
 
-
-
 .card .c3 {
-  background-color: #a92a30
-;
+  background-color: #a92a30;
   position: absolute;
   top: 350px;
   height: 260px;
   width: 50%;
   border-top-right-radius: 25px;
   z-index: 50;
-  
 }
 
-
-
-
 .page-1 > h2 {
-  background-color: #a92a30
-;
+  background-color: #a92a30;
 
   color: white;
   background-color: transparent;
@@ -200,19 +173,14 @@ border-radius: 15px;
   font-weight: 800;
   position: absolute;
 
- 
-
   top: 450px;
 
   left: 55px;
   z-index: 20000;
 }
 
-
-
-
 .page-1 > h3 {
-  background:none;
+  background: none;
 
   color: white;
   padding-top: -50px;
@@ -236,28 +204,28 @@ border-radius: 15px;
   transform: translate(-50%, -110%);
   z-index: 10000;
 }
-.shape{
+.shape {
   background: #a92a30;
-    position: absolute;
-    width: 30vw;
-    height: 60vh;
-    right: 0;
-   
-    z-index: 0;
+  position: absolute;
+  width: 30vw;
+  height: 60vh;
+  right: 0;
+
+  z-index: 0;
 }
-#shape1{
-    height: 100%;
-    width: 100%;
-    background:linear-gradient(#c71e1e,rgb(237, 61, 12)) ;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    filter: blur(60px);
-    position: absolute;
+#shape1 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#c71e1e, rgb(237, 61, 12));
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(60px);
+  position: absolute;
 }
-#shape2{
+#shape2 {
   height: 30vh;
   width: 30vw;
-  background:linear-gradient(rgb(113, 37, 9),rgba(255, 119, 0, 0.788)) ;
+  background: linear-gradient(rgb(113, 37, 9), rgba(255, 119, 0, 0.788));
   border-radius: 50%;
   filter: blur(60px);
   position: absolute;
@@ -267,37 +235,37 @@ border-radius: 15px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-#shape3{
+#shape3 {
   height: 30vh;
-    width: 30vw;
-    background:linear-gradient(#c71e1e,rgb(255, 119, 0)) ;
-    border-radius: 50%;
-    filter: blur(50px);
-    position: absolute;
-    animation-name: first;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  width: 30vw;
+  background: linear-gradient(#c71e1e, rgb(255, 119, 0));
+  border-radius: 50%;
+  filter: blur(50px);
+  position: absolute;
+  animation-name: first;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 @keyframes first {
-  from{
-    transform: translate(-50%,-40%);
+  from {
+    transform: translate(-50%, -40%);
   }
-  to{
-    transform: translate(0%,50%);
+  to {
+    transform: translate(0%, 50%);
   }
 }
 @keyframes second {
-  from{
-    transform: translate(-50%,40%);  
+  from {
+    transform: translate(-50%, 40%);
   }
-  to{
-    transform: translate(0%,-120px);
+  to {
+    transform: translate(0%, -120px);
   }
 }
 
-.hf img{
+.hf img {
   position: relative;
   display: flex;
   align-content: center;
@@ -310,19 +278,14 @@ border-radius: 15px;
   margin-left: 35px;
 }
 
-
-
-
-.page-2{
+.page-2 {
   width: 100%;
-  background-color: #a92a30
-;
+  background-color: #a92a30;
 }
-
 
 .about {
   padding-top: 100px;
-  background:none;
+  background: none;
   height: 1100px;
   width: 96%;
   margin-left: 31px;
@@ -331,49 +294,37 @@ border-radius: 15px;
 }
 
 .abt-p1 {
- background-color: #a92a30;
+  background-color: #a92a30;
   width: 30%;
   height: 350px;
 
- display: flex;
- justify-content: space-between;
- 
-  
+  display: flex;
+  justify-content: space-between;
 }
 
-.abt-p1 h3{
-  background-color: #a92a30
-;
+.abt-p1 h3 {
+  background-color: #a92a30;
   font-size: 50px;
   font-weight: 500;
   z-index: 1000000;
 }
 
-
-
-.icons{
+.icons {
   background: none;
   font-size: larger;
   margin-top: 30px;
 }
 
-
-
-
-
-
 .abt-p2 {
-  background-color: #a92a30
-;
- display: flex;
-  
+  background-color: #a92a30;
+  display: flex;
+
   width: 70%;
   height: 400px;
 }
 
 .abt-p2 h3 {
-  background:none
-;
+  background: none;
   color: white;
   font-size: 59px;
   font-weight: 700;
@@ -381,9 +332,8 @@ border-radius: 15px;
   z-index: 10000;
 }
 
-
-.dot
-{position: absolute;
+.dot {
+  position: absolute;
   background-color: rgb(229, 116, 163);
   border-radius: 20px;
   height: 20px;
@@ -392,18 +342,16 @@ border-radius: 15px;
   z-index: 10000;
 }
 
-
-
-.rm-btn{
+.rm-btn {
   position: relative;
   display: flex;
   align-items: center;
-   width: 308px;
-   height: 30px;
-   margin-top: 25%;
-   margin-right: 2.3% ;
-   padding: 5px 10px;
-   border: none;
+  width: 308px;
+  height: 30px;
+  margin-top: 25%;
+  margin-right: 2.3%;
+  padding: 5px 10px;
+  border: none;
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -412,13 +360,14 @@ border-radius: 15px;
   cursor: pointer;
 }
 
-.page-3{
+.page-3 {
   background-color: white;
   width: 100%;
   height: 700px;
 }
 
-.whatsapp{
+.whatsapp {
+  z-index: 10000000;
   position: fixed;
   top: 650px;
   left: 30px;
@@ -428,7 +377,6 @@ border-radius: 15px;
   padding: 8px;
   font-size: 30px;
   border-radius: 90px;
- 
 }
 
 a:link {
@@ -442,5 +390,4 @@ a:hover {
 }
 a:active {
   text-decoration: none;
-
 }
