@@ -5,26 +5,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color:#A41F13;
+  background-color: rgb(250, 162, 152);
 }
 html,
 body {
   height: 100%;
   width: 100%;
 }
-
+.page-1{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250, 162, 152);
+}
 .navbar{
-  margin-top: 5px;
   padding: 1vw;
   width: 100%;
-  background-color: rgb(190, 247, 190);
-  position:relative;
-  border-radius: 25px;
+  
+  position:fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 4;
 }
 .nav1{
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +41,7 @@ body {
   padding: 8px 15px;
   border: 0.5px solid rgba(96, 94, 94, 0.858);
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   transition: all ease 0.4s;
   position: relative;
@@ -66,22 +71,22 @@ body {
 }
 
 .navbar button{
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   color: white;
-  background-color: black;
+  background-color: rgb(30, 29, 29);
   cursor: pointer;
 }
 .navbar button:hover{
-  background-color: blueviolet;
-  transition: all ease 0.6s;
+  background-color: whitesmoke;
+  color: black;
+  transition: all ease-out 0.5s;
 }
 
 
-=======
 .page-1-card {
   display: flex;
   justify-content: center;
@@ -90,7 +95,7 @@ body {
 }
 
 .card {
-  margin-top: 80px;
+  margin-top: 130px;
   position: relative;
   width: 1450px;
   height: 900px;
@@ -106,44 +111,46 @@ body {
   border-radius: 15px;
   background: url(img/saitm.jpeg);
   background-size: cover;
+  z-index: 1;
 }
 
 .card .c2 {
   position: relative;
   width: 100%;
   height: 200px;
-
   border-radius: 15px;
-  border-top-left-radius: 0;
 }
 
 .card .c2 .c3 {
   position: absolute;
   top: -310px;
-  height: 300px;
+  height: 260px;
   width: 50%;
   border-top-right-radius: 25px;
+  z-index: 2;
 }
 
-.page-1 > h2 {
+#h2 {
   color: white;
   background-color: transparent;
   padding-top: -50px;
   font-size: 200px;
   font-weight: 800;
   position: absolute;
-  top: 430px;
+  top: 490px;
   left: 55px;
+  z-index: 2;
 }
 
-.page-1 > h3 {
+#h3 {
   color: white;
   padding-top: -50px;
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  top: 630px;
+  top: 710px;
   left: 55px;
+  z-index: 2;
 }
 
 .line {
@@ -154,5 +161,103 @@ body {
   top: 110%;
   left: 50%;
   transform: translate(-50%, -110%);
+  z-index: 2;
+}
+.shape{
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    right: 0;
+    top: 100vh;
+    z-index: 0.2;
+}
+#shape1{
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+#shape2{
+  height: 30vh;
+  width: 30vw;
+  background:linear-gradient(orangered,rgb(255, 119, 0)) ;
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: second;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#shape3{
+  height: 30vh;
+    width: 30vw;
+    background:linear-gradient(orangered,rgb(255, 119, 0)) ;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes first {
+  from{
+    transform: translate(-50%,-40%);
+  }
+  to{
+    transform: translate(0%,50%);
+  }
+}
+@keyframes second {
+  from{
+    transform: translate(-50%,40%);  
+  }
+  to{
+    transform: translate(0%,-120px);
+  }
 }
 
+.hf img{
+  position: relative;
+  display: flex;
+  align-content: center;
+  border-radius: 20px;
+  justify-content: center;
+  width: 1450px;
+  height: 650px;
+  margin-top: -90px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-evenly;
+  width: 98%;
+  margin-left: 15px;
+  /* background-color: plum; */
+  height: 50vh;
+}
+
+#left, #right ,h2,p {
+  background: plum;
+  flex: 1; 
+  padding: 10px; 
+  color: white;
+}
+#left{
+  font-size: 30px;
+  font-weight: bold;
+}
+#right{
+  font-size: 55px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-end;
+}
