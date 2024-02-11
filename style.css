@@ -241,12 +241,13 @@ body {
   z-index: 2;
 }
 .shape{
+  background: #a92a30;
     position: absolute;
     width: 30vw;
     height: 30vh;
     right: 0;
     top: 100vh;
-    z-index: 0.2;
+    z-index: 0;
 }
 #shape1{
     height: 100%;
