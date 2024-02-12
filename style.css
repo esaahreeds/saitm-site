@@ -39,24 +39,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3vw;
+  gap: 1.3vw;
   cursor: pointer;
 }
 
 .nav1 a {
   background-color: #d2c8b8;
   text-decoration: none;
-  padding: 8px 15px;
   font-weight: 600;
   color: black;
   transition: all ease 0.4s;
   position: relative;
-  font-size: 15px;
+  font-size: 13px;
   z-index: 1;
-  overflow: hidden;
+ 
 }
+/*
 .nav1 a::after {
-  background-color: #a92a30;
+ 
   content: "";
   position: absolute;
   width: 100%;
@@ -72,8 +72,14 @@ body {
   bottom: 0;
   border-radius: 60px;
 }
+
+*/
 .nav1 a:hover {
-  color: white;
+  background-color: #a5a3a0;
+   padding: 5px 6px;
+   scale: 1.2;
+   border-radius: 30px;
+  
 }
 
 .navbar > img {
@@ -101,11 +107,7 @@ body {
   cursor: pointer;
 }
 
-.navbar button:hover {
-  background-color: whitesmoke;
-  color: black;
-  transition: all ease-out 0.5s;
-}
+
 
 .page-1-card {
   background-color: #a92a30;
@@ -218,10 +220,11 @@ body {
   height: 100%;
   width: 100%;
   background: linear-gradient(#c71e1e, rgb(140, 42, 15));
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border-radius: 50%;
+
   filter: blur(30px);
   position: absolute;
+  top: -31%;
 
 }
 #shape2 {
