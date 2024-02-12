@@ -210,6 +210,7 @@ body {
 .shape {
   background: none;
   position: absolute;
+  top: 20vh;
   left: 67%;
   width: 30vw;
   height: 60vh;
