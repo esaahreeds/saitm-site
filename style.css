@@ -374,7 +374,7 @@ input:checked+label .description {
 .shape {
   background: none;
   position: absolute;
-  top: 80vh;
+  top: 85vh;
   left: 0%;
   width: 32vw;
   height: 50vh;
