@@ -446,7 +446,7 @@ input:checked + label .description {
   font-weight: 400;
   position: absolute;
   top: 160px;
-  left: 50px;
+  left: 70px;
   z-index: 20000;
 }
 
@@ -456,7 +456,7 @@ input:checked + label .description {
   font-size: 85px;
   position: absolute;
   top: 230px;
-  left: 170px;
+  left: 70px;
 
 }
 
@@ -468,7 +468,7 @@ input:checked + label .description {
   font-size: 85px;
   position: absolute;
  
-  left:110px;
+  left:70px;
 }
 
 
@@ -487,7 +487,7 @@ input:checked + label .description {
   font-weight: 400;
   position: absolute;
   top: 320px;
-  left: 50px;
+  left: 70px;
 }
 
 
