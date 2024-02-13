@@ -95,11 +95,10 @@ body {
 .wrapper {
   background: none;
   width: 40%;
-
   height: 50vh;
   position: absolute;
   left: 48%;
-  top: 180vh;
+  top: 155vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,7 +178,7 @@ body {
   height: 100%;
   background-color: rgba(158, 167, 158, 0.8);
   left: 0;
-  top: -100%;
+  top: 0;
   transition: all ease 0.6s;
 }
 .c4::after{
@@ -193,11 +192,15 @@ body {
   transition: all ease 0.6s;
 } 
 .c3:hover::after{
+  top: -100%;
+}
+.c3:hover ~ .c4::after{
   top: 0;
 }
-.c4:hover::after{
-  top: 0;
-}
+
+
+
+
 
 .card {
   width: 80px;
@@ -355,7 +358,7 @@ input:checked+label .description {
   z-index: 2000;
 }
 
-.line {
+/* .line {
   background-color: black;
   height: 2px;
   width: 1450px;
@@ -364,16 +367,16 @@ input:checked+label .description {
   left: 50%;
   transform: translate(-50%, -110%);
   z-index: 99;
-}
+} */
 
 
 
 .shape {
   background: none;
   position: absolute;
-  top: 90vh;
+  top: 80vh;
   left: 0%;
-  width: 35vw;
+  width: 32vw;
   height: 50vh;
   right: 0;
   z-index: 0;
@@ -383,7 +386,7 @@ input:checked+label .description {
   height: 100%;
   width: 100%;
   background: linear-gradient(#c71e1e, rgb(140, 42, 15));
-  border-radius: 40%;
+  border-top-right-radius: 50%;
   filter: blur(30px);
   position: absolute;
   top: -30%;
@@ -547,11 +550,25 @@ a:active {
   text-decoration: none;
 }
 
-
-.info{
-  z-index: 9;
-  margin-top: 35vh;
-  height: 60vh;
+.info {
   position: relative;
+  z-index: 9;
+  top: 25vh;
+  height: 40vh;
   background: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+}
+
+.info h2 {
+  background-color: white;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.info p {
+  background-color: white;
+  font-size: 20px;
 }
