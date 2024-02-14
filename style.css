@@ -37,29 +37,34 @@ body {
 
 .nav1 {
   background-color:#e5dfda;
-
+ position: absolute;
+ 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-self: space-between;
+  top: 10px;
+   left: 420px;
   gap: 1.3vw;
   cursor: pointer;
 }
 
 .nav1 a {
+  
   background-color:#e5dfda;
+  padding: 6px;
   text-decoration: none;
   font-weight: 600;
   color: black;
-  transition: all ease 0.4s;
-  position: relative;
+ 
+ 
   font-size: 13px;
   z-index: 1;
 }
 
 .nav1 a:hover {
   background-color: #a5a3a0;
-  padding: 6px;
-  border-radius: 30px;
+padding: 6px;
+  border-radius: 10px;
 }
 
 .navbar > img {
